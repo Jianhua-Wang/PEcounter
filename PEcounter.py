@@ -41,7 +41,7 @@ def count_bases(rd1_file, rd2_file, map_read, five_p, three_p, map_pattern):
         else:
             primer_nohit += 1
     logger.info('---------------------------------------')
-    logger.info(f'Processed reads: {rd_n:,}, No primer: {primer_nohit:,} ({primer_nohit/rd_n:.2f}), Unmapped: {unmap:,} ({unmap/rd_n:.2f})')
+    logger.info(f'Processed reads: {rd_n:,}, No primer: {primer_nohit:,} ({primer_nohit/rd_n:.2%}), Unmapped: {unmap:,} ({unmap/rd_n:.2%})')
     logger.info(f'Base count of editing site:')
     for base,n in edit_count.items():
         logger.info(f'{base}\t{n} ({n/sum(edit_count.values()):.2%})')
