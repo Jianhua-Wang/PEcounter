@@ -47,7 +47,7 @@ def count_bases(rd1_file, rd2_file, map_read, five_p, three_p, map_pattern):
 
 
 def main():
-    parser = argparse.ArgumentParser(usage="Retrieve evelation from GSI JP ",
+    parser = argparse.ArgumentParser(usage="Count single base editing",
                                      description="python PEcounter.py -p 62 ./ref.fa ./test_1.fq.gz ./test_2.fq.gz",)
     parser.add_argument('ref', type=str,
                         help='fasta file of reference sequence'),
