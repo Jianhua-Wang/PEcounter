@@ -1,1 +1,3 @@
 # PEcounter
+
+depedency: mappy
